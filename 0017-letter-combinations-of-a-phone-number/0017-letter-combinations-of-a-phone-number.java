@@ -18,7 +18,8 @@ return ans;
         int start=(first-2)*3;
         int end=((first-2)*3)+3;
         if(first==8||first==9){start=((first-2)*3)+1; end=((first-2)*3)+4;}
-        if(first==7||first==9){end=((first-2)*3)+4;}
+        if(first==7){end=((first-2)*3)+4;}
+        if(first==9){{end=(((first-2)*3)+1)+4;}}
         for(int i=start;i<end;i++){
             System.out.println(i);
             char ch=(char)('a'+i);
